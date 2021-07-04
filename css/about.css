@@ -1,0 +1,67 @@
+body h1 {
+  text-align: center;
+  margin-bottom: 70px;
+  font-weight: inherit;
+  color: #4d5e6e;
+}
+
+body .wrap {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+body .wrap .explain {
+  margin: 0 auto;
+}
+
+body .wrap table {
+  margin: 50px auto;
+}
+
+body .wrap table td:first-child {
+  font-weight: bold;
+}
+
+body .wrap .profile {
+  display: flex;
+  margin: 0 auto;
+}
+
+body .wrap .profile img {
+  width: 200px;
+}
+
+body .wrap .profile p {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  body .wrap .explain {
+    max-width: 320px;
+  }
+  body .wrap table {
+    max-width: 320px;
+    border-spacing: 0 5px;
+  }
+  body .wrap table .item-name {
+    width: 115px;
+  }
+  body .wrap .profile {
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .wrap .profile img {
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  body .wrap .profile p {
+    margin: 20px auto;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=about.css.map */

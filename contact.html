@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+  <title>Contact</title>
+  <link rel="icon" href="favicons/favicon.ico" id="favicon">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+</head>
+
+<body>
+  <!-- 送信中画面 -->
+  <div id="sending" class="invisible">
+    <div class="loader"></div>
+  </div>
+
+  <!-- ヘッダー -->
+  <script>header();</script>
+
+  <div class="form">
+    <h1>Contact</h1>
+    <div class="form-group">
+      <label class="item" for="company-name">
+        会社名<span class="badge optional">任意</span>
+      </label>
+      <input type="text" name="company-name" id="company-name">
+    </div>
+    <div class="form-group">
+      <label class="item" for="name">
+        氏名<span class="badge essential">必須</span>
+      </label>
+      <input type="text" name="name" id="name">
+      <div class="alert-msg hidden" id="name_msg">
+        お名前を入力してください
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="item" for="email">
+        メールアドレス<span class="badge essential">必須</span>
+      </label>
+      <input type="text" name="email" id="email">
+      <div class="alert-msg hidden" id="email_msg">
+        メールアドレスを入力してください
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="item" for="phone">
+        電話番号<span class="badge optional">任意</span>
+      </label>
+      <input type="text" name="phone" id="phone">
+    </div>
+    <div class="form-group">
+      <label class="item" for="inquiry">
+        お問い合わせ内容<span class="badge essential">必須</span>
+      </label>
+      <textarea name="inquiry" id="inquiry"></textarea>
+      <div class="alert-msg hidden" id="inquiry_msg">
+        お問い合わせ内容を入力してください
+      </div>
+    </div>
+    <div class="form-group-bottun">
+      <a class="btn btn-border">
+        <span id="send_Doc">送信</span>
+      </a>
+    </div>
+  </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="js/mail.js"></script>
+  <script>footer();</script>
+</body>

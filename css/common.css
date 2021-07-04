@@ -1,0 +1,142 @@
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  animation: fadein 1.5s forwards;
+  margin: 0;
+  font-size: 15px;
+  font-family: "M PLUS 1p", sans-serif;
+  line-height: 1.5rem;
+}
+
+html body header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+html body header .logo-pc img {
+  height: 170px;
+}
+
+html body header .logo-phone {
+  display: none;
+}
+
+html body header .icon {
+  display: flex;
+  align-items: center;
+}
+
+html body header .icon i {
+  color: darkgray;
+  transition: 0.3s;
+}
+
+html body header .icon i:hover {
+  color: #cae0ed;
+}
+
+html body .links {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 60px;
+  height: 80px;
+}
+
+html body .links ul {
+  list-style-type: none;
+}
+
+html body .links ul a {
+  font-size: 17px;
+  color: black;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+html body .links ul a:hover {
+  color: #cae0ed;
+}
+
+html body .links .copylight {
+  text-align: center;
+  font-size: 8px;
+  margin-top: 100px;
+}
+
+html body .header-links ul {
+  float: right;
+}
+
+html body .header-links ul li {
+  float: left;
+  padding: 0 0 0 40px;
+}
+
+html body .footer-links {
+  margin: 150px auto 150px auto;
+  height: 100%;
+}
+
+html body .footer-links ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+html body .footer-links ul li {
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  html body header {
+    flex-direction: column;
+  }
+  html body header .logo-pc {
+    display: none;
+  }
+  html body header .logo-phone {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  html body header .logo-phone img {
+    height: 130px;
+  }
+  html body header .icon {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  html body header .icon i {
+    padding: 0 10px;
+  }
+  html body .header-links {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  html body .header-links ul {
+    margin: 0 auto;
+    padding: 0;
+  }
+  html body .header-links ul li {
+    padding: 0 15px;
+  }
+  html body .footer-links ul li {
+    padding: 0 15px;
+  }
+}
+/*# sourceMappingURL=common.css.map */
